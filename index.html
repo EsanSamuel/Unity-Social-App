@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <h2 class="uni">Unity</h2>
+    <i class="bx bx-menu" id="mmm" onclick="openM()"></i>
+
+    <div class="profile-pics">
+        <input type="file" class="file-input" accept="image/*" hidden>
+            <div class="welcomeAI">
+                <div class="preview-img" id="mainp">
+                    <img src="robot.jpg"></div>
+            </div>
+       
+    </div>
+
+    <nav class="menu" id="menu">
+        <h1 class="logo"><i class="bx bx-message-square-dots" id="logo"></i>Unity</h1>
+        <ul class="options">
+            <li class="option tool active"><i class="bx bx-home-alt"></i>Home</li>
+            <li class="option tool"><i class="bx bx-captions"></i>News Feed</li>
+            <li class="option tool"><i class="bx bx-trending-up"></i>Trending</li>
+            <li class="option tool"><i class="bx bx-user-check"></i>Following</li>
+            <li class="option tool"  onclick="openEdit()"><i class="bx bx-face"></i>Profile</li>
+            <li class="option tool"><i class="bx bx-play"></i>Playlist</li>
+        </ul>
+
+        <div class="pages">
+            <ul class="options">
+            <p class="p">Pages you may like</p>
+            <li class="option tool"><span class="FC"> FC </span>  Football FC</li>
+            <li class="option tool"><span class="WD"> WD </span>  Web Developer</li>
+            <li class="option tool"><span class="UI"> UI </span>  UI/UX Community</li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+    <input type="text" id="srch" placeholder=" Search..">
+
+    <h2>Post something</h2>
+    <p class="p" id="p">What's on your mind</p>
+    <div class="preview-img">
+        <img src="robot.jpg" alt="preview-img" id="prv">
+        <button class="post" onclick="openPost()">Post</button>
+        </div>
+ 
+   
+        <div class="postsome" id="postsome">
+            <i class="bx bx-x" id="cancel" onclick="closePost()"></i>
+
+            <div class="preview-img" id="prev">
+                <img src="robot.jpg" id="prvv"></div>
+                <div class="name"></div>
+            <textarea id="textarea" placeholder="  Write Something.."></textarea>
+            <p class="ps"><i class="bx bx-camera"></i>Upload picture</p>
+            <button class="postit" >Post</button>
+        </div>
+
+
+        <div class="mypost">
+        
+    </div>
+
+    <div class="otherPost">
+        <div class="othertxt">
+       <img src="dental.jpg" id="otherImg">
+       <h3 class="rr">Fredrick jack</h3>
+<p>Cool right</p>
+       <img src="robot2.jpg" id="imgstat">
+       </div>
+
+       <div class="icon">
+<i class="bx bx-heart" id="like" onclick="like()"></i>
+    <i class="bx bx-comment"></i>
+    <i class="bx bx-share-alt"></i>
+    <i class="bx bx-dots-vertical-rounded"></i>
+       </div>
+    </div>
+
+
+    <div class="otherPost">
+        <div class="othertxt">
+       <img src="dental.jpg" id="otherImg">
+       <h3 class="rr">Daniel Mike</h3>
+<p>Check out this</p>
+       <img src="robot3.jpg" id="imgstat">
+       </div>
+
+       <div class="icon">
+<i class="bx bx-heart" id="love" onclick="love()"></i>
+    <i class="bx bx-comment"></i>
+    <i class="bx bx-share-alt"></i>
+    <i class="bx bx-dots-vertical-rounded"></i>
+       </div>
+    </div>
+
+    <div class="otherPost">
+        <div class="othertxt">
+       <img src="dental.jpg" id="otherImg">
+       <h3 class="rr">Esan</h3>
+<p>The G.O.A.T</p>
+       <img src="ronny.jpg" id="imgstat">
+       </div>
+
+       <div class="icon">
+<i class="bx bx-heart" id="like" onclick="like()"></i>
+    <i class="bx bx-comment"></i>
+    <i class="bx bx-share-alt"></i>
+    <i class="bx bx-dots-vertical-rounded"></i>
+       </div>
+    </div>
+
+    <div class="otherPost">
+        <div class="othertxt">
+       <img src="dental.jpg" id="otherImg">
+       <h3 class="rr">Car dealers</h3>
+<p>Cool cars</p>
+       <img src="cars.jfif" id="imgstat">
+       </div>
+
+       <div class="icon">
+<i class="bx bx-heart" id="like" onclick="like()"></i>
+    <i class="bx bx-comment"></i>
+    <i class="bx bx-share-alt"></i>
+    <i class="bx bx-dots-vertical-rounded"></i>
+       </div>
+    </div>
+
+
+
+    <div id="rmenu">
+    <section id="rightmenu">
+   <div class="menu2">
+    <h2>Today News</h2>
+    <h4>Chatgpt and its future</h4>
+    <h4>JavaScript Contents</h4>
+    <h4>Web development guide</h4>
+    <h4>Is AI really dangerous</h4>
+    <h4>Best Full-stack Languages</h4>
+    <h6><a href="#">View All</a></h6>
+   </div>
+   </section>
+
+   <section id="rightmenu2">
+    <div class="menu2" id="menu3">
+        <div class="preview-img">
+        <img src="robot.jpg"  id="mainc"></div>
+        <div class="pname">
+
+        </div>
+        <button class="btnp" onclick="openEdit()">Edit Profile</button>
+    </div>
+    </section>
+
+    </div>
+
+    <div class="editp" id="editp">
+        <i class="bx bx-x" id="cancel" onclick="closeEdit()"></i>
+
+        <h2 class="editxt">Edit Profile</h2>
+        <input type="text" id="Firstname" placeholder="Enter Firstname"><br><br>
+        <input type="text" id="Surname" placeholder="Enter Surname"><br><br>
+        <button class="choose">Choose pics</button>
+        <button class="Submit">Save</button>
+    </div>
+
+    <div class="frd">
+    <p class="ppc">Add more friends to see more posts</p>
+    <button class="friends">Add Friends</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
